@@ -16,7 +16,7 @@ const AboutSection = () => {
           <div className="relative">
             <img
               src={aboutTeam}
-              alt="Equipo de barberos profesionales de LM Barberia"
+              alt="Equipo de barberos profesionales de Royal Barber Shop"
               className="w-full rounded-lg shadow-2xl"
               loading="lazy"
               width={1200}
