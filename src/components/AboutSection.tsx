@@ -34,7 +34,7 @@ const AboutSection = () => {
               Más que una <span className="text-gradient-gold">Barbería</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-              En LM Barberia combinamos la tradición del oficio con las tendencias más actuales. Nuestro equipo de barberos profesionales se dedica a ofrecer una experiencia única, donde cada cliente recibe atención personalizada.
+              En Royal Barber Shop combinamos la tradición del oficio con las tendencias más actuales. Nuestro equipo de barberos profesionales se dedica a ofrecer una experiencia única, donde cada cliente recibe atención personalizada.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
               Utilizamos productos de primera calidad y técnicas avanzadas para garantizar resultados impecables. Tu estilo, nuestra pasión.

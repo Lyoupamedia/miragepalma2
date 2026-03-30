@@ -10,19 +10,20 @@ import Footer from "@/components/Footer";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BarberShop",
-  name: "LM Barberia",
-  description: "Barbería premium con cortes de cabello, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
-  url: "https://lmbarberia.lovable.app",
+  name: "Royal Barber Shop",
+  description: "Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
+  url: "https://lmbarbershop.lovable.app",
   image: "/hero-barbershop.jpg",
   priceRange: "$$",
   openingHours: "Mo-Sa 09:00-20:00",
-  telephone: "+1-XXX-XXX-XXXX",
+  telephone: "+34643719547",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Tu dirección aquí",
-    addressLocality: "Tu Ciudad",
-    addressRegion: "Tu Estado",
-    addressCountry: "US",
+    streetAddress: "Carrer Arxiduc Lluís Salvador, 23A",
+    postalCode: "07004",
+    addressLocality: "Palma",
+    addressRegion: "Illes Balears",
+    addressCountry: "ES",
   },
   sameAs: [],
 };
@@ -31,16 +32,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>LM Barberia | Barbería Premium - Cortes, Barba y Afeitado</title>
+        <title>Royal Barber Shop | Barbería Premium en Palma de Mallorca</title>
         <meta
           name="description"
-          content="LM Barberia - Barbería premium con cortes de cabello, arreglo de barba y afeitado clásico. Reserva tu cita online. Estilo y precisión profesional."
+          content="Royal Barber Shop - Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Reserva tu cita por WhatsApp."
         />
-        <meta name="keywords" content="barbería, corte de cabello, barba, afeitado, fade, barbería premium, LM Barberia" />
-        <meta property="og:title" content="LM Barberia | Barbería Premium" />
-        <meta property="og:description" content="Cortes de cabello, arreglo de barba y afeitado clásico con precisión profesional. Reserva tu cita online." />
+        <meta name="keywords" content="barbería, Palma de Mallorca, corte de cabello, barba, afeitado, fade, barbería premium, Royal Barber Shop" />
+        <meta property="og:title" content="Royal Barber Shop | Barbería Premium en Palma" />
+        <meta property="og:description" content="Cortes de cabello, arreglo de barba y afeitado clásico con precisión profesional. Reserva tu cita por WhatsApp." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://lmbarberia.lovable.app" />
+        <link rel="canonical" href="https://lmbarbershop.lovable.app" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
