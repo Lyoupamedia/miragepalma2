@@ -4,26 +4,29 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import serviceHaircut from "@/assets/service-haircut.jpg";
 import serviceShave from "@/assets/service-shave.jpg";
 import heroImg from "@/assets/hero-barbershop.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const images = [
-  { src: gallery1, alt: "Corte fade precisión - LM Barberia" },
-  { src: gallery2, alt: "Arreglo de barba profesional - LM Barberia" },
-  { src: gallery3, alt: "Corte moderno texturizado - LM Barberia" },
-  { src: serviceHaircut, alt: "Estilizado profesional - LM Barberia" },
-  { src: serviceShave, alt: "Afeitado clásico con navaja - LM Barberia" },
-  { src: heroImg, alt: "Interior de LM Barberia" },
+  { src: gallery1, alt: "Royal Barber Shop - Fade" },
+  { src: gallery2, alt: "Royal Barber Shop - Beard" },
+  { src: gallery3, alt: "Royal Barber Shop - Modern cut" },
+  { src: serviceHaircut, alt: "Royal Barber Shop - Styling" },
+  { src: serviceShave, alt: "Royal Barber Shop - Classic shave" },
+  { src: heroImg, alt: "Royal Barber Shop - Interior" },
 ];
 
 const GallerySection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="galeria" className="py-24 bg-gradient-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">
-            Nuestro Trabajo
+            {t("gallery.subtitle")}
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            <span className="text-gradient-gold">Galería</span>
+            <span className="text-gradient-gold">{t("gallery.title")}</span>
           </h2>
         </div>
 

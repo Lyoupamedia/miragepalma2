@@ -2,41 +2,44 @@ import serviceHaircut from "@/assets/service-haircut.jpg";
 import serviceBeard from "@/assets/service-beard.jpg";
 import serviceShave from "@/assets/service-shave.jpg";
 import { Scissors, Sparkles, Wind } from "lucide-react";
-
-const services = [
-  {
-    icon: Scissors,
-    title: "Corte de Cabello",
-    description: "Fades, degradados, cortes clásicos y modernos con precisión profesional.",
-    price: "Desde $15",
-    image: serviceHaircut,
-  },
-  {
-    icon: Sparkles,
-    title: "Arreglo de Barba",
-    description: "Perfilado, recorte y diseño de barba con productos premium.",
-    price: "Desde $10",
-    image: serviceBeard,
-  },
-  {
-    icon: Wind,
-    title: "Afeitado Clásico",
-    description: "Afeitado con navaja, toalla caliente y bálsamo para una experiencia relajante.",
-    price: "Desde $20",
-    image: serviceShave,
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ServicesSection = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: Scissors,
+      title: t("services.haircut.title"),
+      description: t("services.haircut.description"),
+      price: t("services.haircut.price"),
+      image: serviceHaircut,
+    },
+    {
+      icon: Sparkles,
+      title: t("services.beard.title"),
+      description: t("services.beard.description"),
+      price: t("services.beard.price"),
+      image: serviceBeard,
+    },
+    {
+      icon: Wind,
+      title: t("services.shave.title"),
+      description: t("services.shave.description"),
+      price: t("services.shave.price"),
+      image: serviceShave,
+    },
+  ];
+
   return (
     <section id="servicios" className="py-24 bg-gradient-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">
-            Nuestros Servicios
+            {t("services.subtitle")}
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Servicios <span className="text-gradient-gold">Premium</span>
+            {t("services.title")} <span className="text-gradient-gold">{t("services.premium")}</span>
           </h2>
         </div>
 
@@ -83,7 +86,7 @@ const ServicesSection = () => {
             rel="noopener noreferrer"
             className="inline-flex bg-gradient-gold text-primary-foreground font-body font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity"
           >
-            Reservar Cita
+            {t("services.bookCta")}
           </a>
         </div>
       </div>
