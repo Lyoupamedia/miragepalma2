@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="#inicio" className="flex items-center gap-2">
           <Scissors className="w-6 h-6 text-primary" />
           <span className="font-display text-xl font-bold text-foreground">
-            LM <span className="text-gradient-gold">Barberia</span>
+            ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
           </span>
         </a>
 
