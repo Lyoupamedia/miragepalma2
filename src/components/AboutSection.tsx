@@ -1,22 +1,24 @@
 import aboutTeam from "@/assets/about-team.jpg";
 import { Award, Clock, Users } from "lucide-react";
-
-const stats = [
-  { icon: Clock, value: "5+", label: "Años de experiencia" },
-  { icon: Users, value: "2000+", label: "Clientes satisfechos" },
-  { icon: Award, value: "100%", label: "Compromiso" },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+
+  const stats = [
+    { icon: Clock, value: "5+", label: t("about.stats.experience") },
+    { icon: Users, value: "2000+", label: t("about.stats.clients") },
+    { icon: Award, value: "100%", label: t("about.stats.commitment") },
+  ];
+
   return (
     <section id="nosotros" className="py-24 bg-surface">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-          {/* Image */}
           <div className="relative">
             <img
               src={aboutTeam}
-              alt="Equipo de barberos profesionales de Royal Barber Shop"
+              alt="Royal Barber Shop team"
               className="w-full rounded-lg shadow-2xl"
               loading="lazy"
               width={1200}
@@ -25,19 +27,18 @@ const AboutSection = () => {
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-lg -z-10" />
           </div>
 
-          {/* Content */}
           <div>
             <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">
-              Sobre Nosotros
+              {t("about.subtitle")}
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Más que una <span className="text-gradient-gold">Barbería</span>
+              {t("about.titlePre")} <span className="text-gradient-gold">{t("about.titleHighlight")}</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-              En Royal Barber Shop combinamos la tradición del oficio con las tendencias más actuales. Nuestro equipo de barberos profesionales se dedica a ofrecer una experiencia única, donde cada cliente recibe atención personalizada.
+              {t("about.p1")}
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
-              Utilizamos productos de primera calidad y técnicas avanzadas para garantizar resultados impecables. Tu estilo, nuestra pasión.
+              {t("about.p2")}
             </p>
 
             <div className="grid grid-cols-3 gap-6">

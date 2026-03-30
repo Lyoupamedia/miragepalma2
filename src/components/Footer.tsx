@@ -1,6 +1,9 @@
 import { Scissors } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-4">
@@ -12,7 +15,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="font-body text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Royal Barber Shop. Todos los derechos reservados.
+            © {new Date().getFullYear()} Royal Barber Shop. {t("footer.rights")}
           </p>
         </div>
       </div>

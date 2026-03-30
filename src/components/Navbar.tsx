@@ -1,16 +1,26 @@
 import { useState } from "react";
-import { Scissors, Menu, X } from "lucide-react";
+import { Scissors, Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { Language } from "@/i18n/translations";
 
 const navLinks = [
-  { href: "#inicio", label: "Inicio" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#nosotros", label: "Nosotros" },
-  { href: "#galeria", label: "Galería" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#inicio", key: "nav.home" },
+  { href: "#servicios", key: "nav.services" },
+  { href: "#nosotros", key: "nav.about" },
+  { href: "#galeria", key: "nav.gallery" },
+  { href: "#contacto", key: "nav.contact" },
+];
+
+const languages: { code: Language; label: string }[] = [
+  { code: "es", label: "ES" },
+  { code: "en", label: "EN" },
+  { code: "fr", label: "FR" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
@@ -30,20 +40,47 @@ const Navbar = () => {
                 href={link.href}
                 className="text-sm font-body text-muted-foreground hover:text-primary transition-colors duration-300"
               >
-                {link.label}
+                {t(link.key)}
               </a>
             </li>
           ))}
         </ul>
 
-        <a
-          href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
-        >
-          Reservar Cita
-        </a>
+        <div className="hidden md:flex items-center gap-4">
+          {/* Language switcher */}
+          <div className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="flex items-center gap-1.5 text-sm font-body text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Change language"
+            >
+              <Globe className="w-4 h-4" />
+              {language.toUpperCase()}
+            </button>
+            {langOpen && (
+              <div className="absolute top-full right-0 mt-2 bg-card border border-border rounded-md shadow-lg overflow-hidden">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => { setLanguage(lang.code); setLangOpen(false); }}
+                    className={`block w-full px-4 py-2 text-sm font-body text-left hover:bg-primary/10 transition-colors ${language === lang.code ? "text-primary" : "text-muted-foreground"}`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <a
+            href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
+          >
+            {t("nav.bookCta")}
+          </a>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -66,10 +103,21 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="text-base font-body text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {link.label}
+                  {t(link.key)}
                 </a>
               </li>
             ))}
+            <li className="flex gap-2">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => { setLanguage(lang.code); }}
+                  className={`px-3 py-1 text-sm font-body rounded border transition-colors ${language === lang.code ? "border-primary text-primary" : "border-border text-muted-foreground hover:border-primary/30"}`}
+                >
+                  {lang.label}
+                </button>
+              ))}
+            </li>
             <li>
               <a
                 href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
@@ -77,7 +125,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md"
               >
-                Reservar Cita
+                {t("nav.bookCta")}
               </a>
             </li>
           </ul>
