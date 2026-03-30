@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="#inicio" className="flex items-center gap-2">
           <Scissors className="w-6 h-6 text-primary" />
           <span className="font-display text-xl font-bold text-foreground">
-            LM <span className="text-gradient-gold">Barberia</span>
+            ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
           </span>
         </a>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://lmbarberia.lovable.app"
+          href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://lmbarberia.lovable.app"
+                href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md"

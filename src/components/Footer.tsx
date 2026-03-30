@@ -8,11 +8,11 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Scissors className="w-5 h-5 text-primary" />
             <span className="font-display text-lg font-bold text-foreground">
-              LM <span className="text-gradient-gold">Barberia</span>
+              ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
             </span>
           </div>
           <p className="font-body text-sm text-muted-foreground">
-            © {new Date().getFullYear()} LM Barberia. Todos los derechos reservados.
+            © {new Date().getFullYear()} Royal Barber Shop. Todos los derechos reservados.
           </p>
         </div>
       </div>

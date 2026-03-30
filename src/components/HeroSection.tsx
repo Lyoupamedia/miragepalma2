@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Interior de LM Barberia con sillas de barbero clásicas"
+          alt="Interior de Royal Barber Shop con sillas de barbero clásicas"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -22,19 +22,19 @@ const HeroSection = () => {
           Barbería Premium
         </p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          LM <span className="text-gradient-gold">Barberia</span>
+          ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
         </h1>
         <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           Donde el estilo clásico se encuentra con la precisión moderna. Cortes de cabello, afeitados y grooming de primera clase.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <a
-            href="https://lmbarberia.lovable.app"
+            href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-gold text-primary-foreground font-body font-semibold px-8 py-3.5 rounded-md hover:opacity-90 transition-opacity shadow-gold text-lg"
           >
-            Reservar Ahora
+            Reservar por WhatsApp
           </a>
           <a
             href="#servicios"
