@@ -35,8 +35,7 @@ const ContactSection = () => {
             <Clock className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">Horario</h3>
             <p className="font-body text-muted-foreground text-sm">
-              Lun - Sáb: 9:00 - 20:00<br />
-              Domingo: Cerrado
+              Todos los días: 9:00 - 21:00
             </p>
           </div>
         </div>
