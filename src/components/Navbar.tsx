@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://lmbarberia.lovable.app"
+          href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex bg-gradient-gold text-primary-foreground font-body font-semibold text-sm px-6 py-2.5 rounded-md hover:opacity-90 transition-opacity"
