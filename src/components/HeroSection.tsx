@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Interior de Royal Barber Shop"
+          alt="Interior de Mirage"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}

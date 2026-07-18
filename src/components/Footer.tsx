@@ -15,7 +15,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="font-body text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Royal Barber Shop. {t("footer.rights")}
+            © {new Date().getFullYear()} Mirage. {t("footer.rights")}
           </p>
         </div>
       </div>
