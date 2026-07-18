@@ -23,7 +23,7 @@ const HeroSection = () => {
           {t("hero.subtitle")}
         </p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
+          <span className="text-gradient-gold">MIRAGE</span>
         </h1>
         <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           {t("hero.description")}

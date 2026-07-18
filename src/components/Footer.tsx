@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Scissors className="w-5 h-5 text-primary" />
             <span className="font-display text-lg font-bold text-foreground">
-              ROYAL <span className="text-gradient-gold">BARBER SHOP</span>
+              <span className="text-gradient-gold">MIRAGE</span>
             </span>
           </div>
           <p className="font-body text-sm text-muted-foreground">
