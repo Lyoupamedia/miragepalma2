@@ -7,12 +7,12 @@ import heroImg from "@/assets/hero-barbershop.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const images = [
-  { src: gallery1, alt: "Royal Barber Shop - Fade" },
-  { src: gallery2, alt: "Royal Barber Shop - Beard" },
-  { src: gallery3, alt: "Royal Barber Shop - Modern cut" },
-  { src: serviceHaircut, alt: "Royal Barber Shop - Styling" },
-  { src: serviceShave, alt: "Royal Barber Shop - Classic shave" },
-  { src: heroImg, alt: "Royal Barber Shop - Interior" },
+  { src: gallery1, alt: "Mirage - Fade" },
+  { src: gallery2, alt: "Mirage - Beard" },
+  { src: gallery3, alt: "Mirage - Modern cut" },
+  { src: serviceHaircut, alt: "Mirage - Styling" },
+  { src: serviceShave, alt: "Mirage - Classic shave" },
+  { src: heroImg, alt: "Mirage - Interior" },
 ];
 
 const GallerySection = () => {

@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BarberShop",
-  name: "Royal Barber Shop",
+  name: "Mirage",
   description: "Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
   url: "https://lmbarbershop.lovable.app",
   image: "/hero-barbershop.jpg",
@@ -32,13 +32,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Royal Barber Shop | Barbería Premium en Palma de Mallorca</title>
+        <title>Mirage | Barbería Premium en Palma de Mallorca</title>
         <meta
           name="description"
-          content="Royal Barber Shop - Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Reserva tu cita por WhatsApp."
+          content="Mirage - Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Reserva tu cita por WhatsApp."
         />
-        <meta name="keywords" content="barbería, Palma de Mallorca, corte de cabello, barba, afeitado, fade, barbería premium, Royal Barber Shop" />
-        <meta property="og:title" content="Royal Barber Shop | Barbería Premium en Palma" />
+        <meta name="keywords" content="barbería, Palma de Mallorca, corte de cabello, barba, afeitado, fade, barbería premium, Mirage" />
+        <meta property="og:title" content="Mirage | Barbería Premium en Palma" />
         <meta property="og:description" content="Cortes de cabello, arreglo de barba y afeitado clásico con precisión profesional. Reserva tu cita por WhatsApp." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://lmbarbershop.lovable.app" />

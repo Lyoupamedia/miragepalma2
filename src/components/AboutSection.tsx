@@ -18,7 +18,7 @@ const AboutSection = () => {
           <div className="relative">
             <img
               src={aboutTeam}
-              alt="Royal Barber Shop team"
+              alt="Mirage team"
               className="w-full rounded-lg shadow-2xl"
               loading="lazy"
               width={1200}

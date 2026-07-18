@@ -64,9 +64,9 @@ export const translations = {
     titlePre: { es: "Más que una", en: "More than a", fr: "Plus qu'un" },
     titleHighlight: { es: "Barbería", en: "Barbershop", fr: "Barbier" },
     p1: {
-      es: "En Royal Barber Shop combinamos la tradición del oficio con las tendencias más actuales. Nuestro equipo de barberos profesionales se dedica a ofrecer una experiencia única, donde cada cliente recibe atención personalizada.",
-      en: "At Royal Barber Shop we combine the tradition of the craft with the latest trends. Our team of professional barbers is dedicated to offering a unique experience, where every client receives personalized attention.",
-      fr: "Chez Royal Barber Shop, nous combinons la tradition du métier avec les dernières tendances. Notre équipe de barbiers professionnels se consacre à offrir une expérience unique, où chaque client reçoit une attention personnalisée.",
+      es: "En Mirage combinamos la tradición del oficio con las tendencias más actuales. Nuestro equipo de barberos profesionales se dedica a ofrecer una experiencia única, donde cada cliente recibe atención personalizada.",
+      en: "At Mirage we combine the tradition of the craft with the latest trends. Our team of professional barbers is dedicated to offering a unique experience, where every client receives personalized attention.",
+      fr: "Chez Mirage, nous combinons la tradition du métier avec les dernières tendances. Notre équipe de barbiers professionnels se consacre à offrir une expérience unique, où chaque client reçoit une attention personnalisée.",
     },
     p2: {
       es: "Utilizamos productos de primera calidad y técnicas avanzadas para garantizar resultados impecables. Tu estilo, nuestra pasión.",
