@@ -94,6 +94,11 @@ export const translations = {
     phone: { es: "Teléfono", en: "Phone", fr: "Téléphone" },
     schedule: { es: "Horario", en: "Schedule", fr: "Horaires" },
     daily: { es: "Todos los días: 9:00 - 21:30", en: "Daily: 9:00 AM - 9:30 PM", fr: "Tous les jours : 9h00 - 21h30" },
+    walkins: {
+      es: "Aceptamos clientes sin cita previa",
+      en: "Walk-ins welcome — no appointment needed",
+      fr: "Sans rendez-vous acceptés",
+    },
     whatsappCta: { es: "Agenda Tu Cita por WhatsApp", en: "Book Your Appointment via WhatsApp", fr: "Prenez Rendez-vous par WhatsApp" },
   },
 
