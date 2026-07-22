@@ -30,7 +30,7 @@ const ContactSection = () => {
             <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">{t("contact.phone")}</h3>
             <p className="font-body text-muted-foreground text-sm">
-              <a href="tel:+34643719547" className="hover:text-primary transition-colors">+34 643 719 547</a>
+              <a href="tel:+34617957732" className="hover:text-primary transition-colors">+34 643 719 547</a>
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const ContactSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
+            href="https://wa.me/34617957732?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-gold text-primary-foreground font-body font-semibold px-10 py-4 rounded-md hover:opacity-90 transition-opacity shadow-gold text-lg"

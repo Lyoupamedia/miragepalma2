@@ -81,7 +81,7 @@ const ServicesSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/34643719547?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
+            href="https://wa.me/34617957732?text=Hola%2C%20me%20gustaría%20reservar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex bg-gradient-gold text-primary-foreground font-body font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity"
