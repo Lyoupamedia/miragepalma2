@@ -59,7 +59,7 @@ const ContactSection = () => {
         <div className="max-w-5xl mx-auto mt-12 rounded-lg overflow-hidden border border-border shadow-lg">
           <iframe
             title="MIRAGE | BARBERSHOP PALMA location on Google Maps"
-            src="https://www.google.com/maps?q=MIRAGE%20%7C%20BARBERSHOP%20PALMA&output=embed"
+            src="https://www.google.com/maps?q=MIRAGE+BARBERSHOP+PALMA%2C+Carrer+de+l%27Arxiduc+Llu%C3%ADs+Salvador+23A%2C+Nord%2C+07004+Palma%2C+Illes+Balears&output=embed"
             width="100%"
             height="400"
             loading="lazy"
