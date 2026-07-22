@@ -16,7 +16,7 @@ const jsonLd = {
   image: "/hero-barbershop.jpg",
   priceRange: "$$",
   openingHours: "Mo-Su 09:00-21:00",
-  telephone: "+34643719547",
+  telephone: "+34617957732",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Carrer Arxiduc Lluís Salvador, 23A",
