@@ -15,7 +15,7 @@ const jsonLd = {
   url: "https://lmbarbershop.lovable.app",
   image: "/hero-barbershop.jpg",
   priceRange: "$$",
-  openingHours: "Mo-Su 09:00-21:00",
+  openingHours: "Mo-Su 09:00-21:30",
   telephone: "+34617957732",
   address: {
     "@type": "PostalAddress",
