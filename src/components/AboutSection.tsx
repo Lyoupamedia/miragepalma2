@@ -7,7 +7,7 @@ const AboutSection = () => {
 
   const stats = [
     { icon: Clock, value: "+15", label: t("about.stats.experience") },
-    { icon: Users, value: "2000+", label: t("about.stats.clients") },
+    { icon: Users, value: "+1500", label: t("about.stats.clients") },
     { icon: Award, value: "100%", label: t("about.stats.commitment") },
   ];
 
