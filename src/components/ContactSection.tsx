@@ -58,8 +58,8 @@ const ContactSection = () => {
 
         <div className="max-w-5xl mx-auto mt-12 rounded-lg overflow-hidden border border-border shadow-lg">
           <iframe
-            title="Mirage Barbershop location on Google Maps - Carrer Arxiduc Lluís Salvador 23A, Palma"
-            src="https://www.google.com/maps?q=Carrer%20Arxiduc%20Llu%C3%ADs%20Salvador%2023A%2C%2007004%20Palma%2C%20Illes%20Balears&output=embed"
+            title="MIRAGE | BARBERSHOP PALMA location on Google Maps"
+            src="https://www.google.com/maps?q=MIRAGE%20%7C%20BARBERSHOP%20PALMA&output=embed"
             width="100%"
             height="400"
             loading="lazy"
