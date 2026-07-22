@@ -23,7 +23,7 @@ const jsonLd = {
   telephone: "+34617957732",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Carrer Arxiduc Lluís Salvador, 23A",
+    streetAddress: "Carrer de l'Arxiduc Lluís Salvador, 23A, Nord",
     postalCode: "07004",
     addressLocality: "Palma",
     addressRegion: "Illes Balears",
