@@ -9,13 +9,17 @@ import Footer from "@/components/Footer";
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "BarberShop",
-  name: "Mirage",
+  "@type": ["BarberShop", "LocalBusiness"],
+  "@id": "https://lmbarbershop.lovable.app/#business",
+  name: "MIRAGE | BARBERSHOP PALMA",
+  alternateName: "Mirage Barbershop",
   description: "Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
   url: "https://lmbarbershop.lovable.app",
-  image: "/hero-barbershop.jpg",
-  priceRange: "$$",
-  openingHours: "Mo-Su 09:00-21:30",
+  image: "https://lmbarbershop.lovable.app/hero-barbershop.jpg",
+  logo: "https://lmbarbershop.lovable.app/hero-barbershop.jpg",
+  priceRange: "€€",
+  currenciesAccepted: "EUR",
+  paymentAccepted: "Cash, Credit Card",
   telephone: "+34617957732",
   address: {
     "@type": "PostalAddress",
@@ -25,7 +29,29 @@ const jsonLd = {
     addressRegion: "Illes Balears",
     addressCountry: "ES",
   },
-  sameAs: [],
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 39.5732,
+    longitude: 2.6412,
+  },
+  areaServed: [
+    { "@type": "City", name: "Palma de Mallorca" },
+    { "@type": "AdministrativeArea", name: "Illes Balears" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "09:00",
+      closes: "21:30",
+    },
+  ],
+  hasMap: "https://www.google.com/maps?q=MIRAGE+%7C+BARBERSHOP+PALMA",
+  sameAs: [
+    "https://www.instagram.com/miragepalma",
+    "https://www.facebook.com/miragepalma",
+    "https://www.tiktok.com/@miragepalma",
+  ],
 };
 
 const Index = () => {
