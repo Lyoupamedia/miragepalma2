@@ -6,7 +6,7 @@ const AboutSection = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Clock, value: "5+", label: t("about.stats.experience") },
+    { icon: Clock, value: "+15", label: t("about.stats.experience") },
     { icon: Users, value: "2000+", label: t("about.stats.clients") },
     { icon: Award, value: "100%", label: t("about.stats.commitment") },
   ];
