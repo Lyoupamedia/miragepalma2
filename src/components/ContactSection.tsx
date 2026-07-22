@@ -22,12 +22,12 @@ const ContactSection = () => {
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">{t("contact.location")}</h3>
             <p className="font-body text-muted-foreground text-sm">
               <a
-                href="https://maps.google.com/?q=Carrer+Arxiduc+Llu%C3%ADs+Salvador+23A+07004+Palma"
+                href="https://maps.google.com/?q=MIRAGE+BARBERSHOP+PALMA+Carrer+de+l%27Arxiduc+Llu%C3%ADs+Salvador+23A+Nord+07004+Palma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
               >
-                Carrer Arxiduc Lluís Salvador, 23A<br />
+                Carrer de l'Arxiduc Lluís Salvador, 23A, Nord<br />
                 07004 Palma, Illes Balears
               </a>
             </p>
@@ -59,7 +59,7 @@ const ContactSection = () => {
         <div className="max-w-5xl mx-auto mt-12 rounded-lg overflow-hidden border border-border shadow-lg">
           <iframe
             title="MIRAGE | BARBERSHOP PALMA location on Google Maps"
-            src="https://www.google.com/maps?q=MIRAGE%20%7C%20BARBERSHOP%20PALMA&output=embed"
+            src="https://www.google.com/maps?q=MIRAGE+BARBERSHOP+PALMA%2C+Carrer+de+l%27Arxiduc+Llu%C3%ADs+Salvador+23A%2C+Nord%2C+07004+Palma%2C+Illes+Balears&output=embed"
             width="100%"
             height="400"
             loading="lazy"
