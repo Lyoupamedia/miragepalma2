@@ -40,6 +40,9 @@ const ContactSection = () => {
             <p className="font-body text-muted-foreground text-sm">
               {t("contact.daily")}
             </p>
+            <p className="font-body text-primary text-xs mt-2 font-medium">
+              {t("contact.walkins")}
+            </p>
           </div>
         </div>
 
