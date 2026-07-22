@@ -16,21 +16,31 @@ const ContactSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/30 transition-colors">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <address className="not-italic bg-card border border-border rounded-lg p-8 text-center hover:border-primary/30 transition-colors">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">{t("contact.location")}</h3>
             <p className="font-body text-muted-foreground text-sm">
-              Carrer Arxiduc Lluís Salvador, 23A<br />
-              07004 Palma, Illes Balears
+              <a
+                href="https://maps.google.com/?q=Carrer+Arxiduc+Llu%C3%ADs+Salvador+23A+07004+Palma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                Carrer Arxiduc Lluís Salvador, 23A<br />
+                07004 Palma, Illes Balears
+              </a>
             </p>
-          </div>
+          </address>
 
           <div className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/30 transition-colors">
             <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">{t("contact.phone")}</h3>
             <p className="font-body text-muted-foreground text-sm">
               <a href="tel:+34617957732" className="hover:text-primary transition-colors">+34 617 957 732</a>
+            </p>
+            <p className="font-body text-muted-foreground text-sm mt-2">
+              <a href="mailto:info@miragepalma.com" className="hover:text-primary transition-colors">info@miragepalma.com</a>
             </p>
           </div>
 
@@ -44,6 +54,18 @@ const ContactSection = () => {
               {t("contact.walkins")}
             </p>
           </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto mt-12 rounded-lg overflow-hidden border border-border shadow-lg">
+          <iframe
+            title="Mirage Barbershop location on Google Maps - Carrer Arxiduc Lluís Salvador 23A, Palma"
+            src="https://www.google.com/maps?q=Carrer%20Arxiduc%20Llu%C3%ADs%20Salvador%2023A%2C%2007004%20Palma%2C%20Illes%20Balears&output=embed"
+            width="100%"
+            height="400"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full border-0"
+          />
         </div>
 
         <div className="flex justify-center gap-6 mt-12">
