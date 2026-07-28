@@ -7,16 +7,21 @@ import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-const jsonLd = {
+const SITE_URL = "https://miragepalma2.lovable.app";
+const OG_IMAGE =
+  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ccdc6b1c-6df4-400d-a768-dcad1076063c/id-preview-9861061d--7dde52f0-45d0-4d2e-9ced-d106459bb2f2.lovable.app-1774909098368.png";
+
+const businessJsonLd = {
   "@context": "https://schema.org",
   "@type": ["BarberShop", "LocalBusiness"],
-  "@id": "https://lmbarbershop.lovable.app/#business",
+  "@id": `${SITE_URL}/#business`,
   name: "MIRAGE | BARBERSHOP PALMA",
   alternateName: "Mirage Barbershop",
-  description: "Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
-  url: "https://lmbarbershop.lovable.app",
-  image: "https://lmbarbershop.lovable.app/hero-barbershop.jpg",
-  logo: "https://lmbarbershop.lovable.app/hero-barbershop.jpg",
+  description:
+    "Barbería premium en Palma de Mallorca. Cortes de cabello, fade, arreglo de barba y afeitado clásico. Estilo y precisión profesional.",
+  url: SITE_URL,
+  image: OG_IMAGE,
+  logo: OG_IMAGE,
   priceRange: "€€",
   currenciesAccepted: "EUR",
   paymentAccepted: "Cash, Credit Card",
@@ -29,11 +34,7 @@ const jsonLd = {
     addressRegion: "Illes Balears",
     addressCountry: "ES",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 39.5732,
-    longitude: 2.6412,
-  },
+  geo: { "@type": "GeoCoordinates", latitude: 39.5732, longitude: 2.6412 },
   areaServed: [
     { "@type": "City", name: "Palma de Mallorca" },
     { "@type": "AdministrativeArea", name: "Illes Balears" },
@@ -54,22 +55,52 @@ const jsonLd = {
   ],
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  url: SITE_URL,
+  name: "Mirage Barbershop Palma",
+  inLanguage: ["es-ES", "en", "fr"],
+};
+
+const TITLE = "Mirage Barbershop Palma | Barbería Premium en Palma de Mallorca";
+const DESCRIPTION =
+  "Mirage Barbershop en Palma de Mallorca: cortes de cabello, fade, arreglo de barba y afeitado clásico. Abierto todos los días 09:00-21:30. Reserva por WhatsApp.";
+
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Mirage | Barbería Premium en Palma de Mallorca</title>
+        <html lang="es" />
+        <title>{TITLE}</title>
+        <meta name="description" content={DESCRIPTION} />
         <meta
-          name="description"
-          content="Mirage - Barbería premium en Palma de Mallorca. Cortes de cabello, arreglo de barba y afeitado clásico. Reserva tu cita por WhatsApp."
+          name="keywords"
+          content="barbería Palma, barber shop Palma de Mallorca, corte de pelo Palma, fade Palma, arreglo de barba, afeitado clásico, Mirage Barbershop"
         />
-        <meta name="keywords" content="barbería, Palma de Mallorca, corte de cabello, barba, afeitado, fade, barbería premium, Mirage" />
-        <meta property="og:title" content="Mirage | Barbería Premium en Palma" />
-        <meta property="og:description" content="Cortes de cabello, arreglo de barba y afeitado clásico con precisión profesional. Reserva tu cita por WhatsApp." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://lmbarbershop.lovable.app" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <link rel="canonical" href={`${SITE_URL}/`} />
+
+        <meta property="og:type" content="business.business" />
+        <meta property="og:site_name" content="Mirage Barbershop Palma" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:url" content={`${SITE_URL}/`} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Mirage Barbershop Palma" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:image" content={OG_IMAGE} />
+
+        <script type="application/ld+json">{JSON.stringify(businessJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
       </Helmet>
+
 
       <Navbar />
       <main>
