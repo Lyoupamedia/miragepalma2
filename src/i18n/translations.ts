@@ -30,13 +30,49 @@ export const translations = {
     premium: { es: "Premium", en: "Premium", fr: "Premium" },
     bookCta: { es: "Reservar Cita", en: "Book Appointment", fr: "Prendre Rendez-vous" },
     haircut: {
-      title: { es: "Corte de Cabello", en: "Haircut", fr: "Coupe de Cheveux" },
+      title: { es: "Corte", en: "Haircut", fr: "Coupe" },
       description: {
-        es: "Fades, degradados, cortes clásicos y modernos con precisión profesional.",
-        en: "Fades, tapers, classic and modern cuts with professional precision.",
-        fr: "Dégradés, coupes classiques et modernes avec une précision professionnelle.",
+        es: "Corte clásico o moderno con acabado profesional a tu gusto.",
+        en: "Classic or modern cut with a professional finish to your taste.",
+        fr: "Coupe classique ou moderne avec une finition professionnelle selon vos goûts.",
       },
-      price: { es: "Desde $15", en: "From $15", fr: "À partir de 15$" },
+      price: { es: "12€", en: "€12", fr: "12€" },
+    },
+    haircutBeard: {
+      title: { es: "Corte & Barba", en: "Haircut & Beard", fr: "Coupe & Barbe" },
+      description: {
+        es: "Pack completo con corte de cabello y arreglo de barba.",
+        en: "Complete pack with haircut and beard trim.",
+        fr: "Pack complet avec coupe de cheveux et taille de barbe.",
+      },
+      price: { es: "18€", en: "€18", fr: "18€" },
+    },
+    senior: {
+      title: { es: "Jubilado", en: "Senior", fr: "Senior" },
+      description: {
+        es: "Tarifa especial para jubilados con el mismo servicio de calidad.",
+        en: "Special rate for seniors with the same quality service.",
+        fr: "Tarif spécial pour seniors avec le même service de qualité.",
+      },
+      price: { es: "10€", en: "€10", fr: "10€" },
+    },
+    kids: {
+      title: { es: "Niños", en: "Kids", fr: "Enfants" },
+      description: {
+        es: "Corte infantil con paciencia y estilo para los más pequeños.",
+        en: "Kids' cut with patience and style for the little ones.",
+        fr: "Coupe enfant avec patience et style pour les plus petits.",
+      },
+      price: { es: "10€", en: "€10", fr: "10€" },
+    },
+    shampoo: {
+      title: { es: "Champú", en: "Shampoo", fr: "Shampoing" },
+      description: {
+        es: "Lavado refrescante con champú premium antes o después de tu corte.",
+        en: "Refreshing wash with premium shampoo before or after your cut.",
+        fr: "Lavage rafraîchissant avec shampoing premium avant ou après votre coupe.",
+      },
+      price: { es: "2€", en: "€2", fr: "2€" },
     },
     beard: {
       title: { es: "Arreglo de Barba", en: "Beard Trim", fr: "Taille de Barbe" },
@@ -45,16 +81,7 @@ export const translations = {
         en: "Shaping, trimming and beard design with premium products.",
         fr: "Façonnage, taille et design de barbe avec des produits premium.",
       },
-      price: { es: "Desde $10", en: "From $10", fr: "À partir de 10$" },
-    },
-    shave: {
-      title: { es: "Afeitado Clásico", en: "Classic Shave", fr: "Rasage Classique" },
-      description: {
-        es: "Afeitado con navaja, toalla caliente y bálsamo para una experiencia relajante.",
-        en: "Straight razor shave, hot towel and balm for a relaxing experience.",
-        fr: "Rasage au rasoir, serviette chaude et baume pour une expérience relaxante.",
-      },
-      price: { es: "Desde $20", en: "From $20", fr: "À partir de 20$" },
+      price: { es: "8€", en: "€8", fr: "8€" },
     },
   },
 

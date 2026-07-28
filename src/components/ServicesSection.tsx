@@ -1,7 +1,7 @@
 import serviceHaircut from "@/assets/service-haircut.jpg";
 import serviceBeard from "@/assets/service-beard.jpg";
 import serviceShave from "@/assets/service-shave.jpg";
-import { Scissors, Sparkles, Wind } from "lucide-react";
+import { Scissors, Sparkles, Heart, Smile, Droplets, Wind } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const ServicesSection = () => {
@@ -17,16 +17,37 @@ const ServicesSection = () => {
     },
     {
       icon: Sparkles,
-      title: t("services.beard.title"),
-      description: t("services.beard.description"),
-      price: t("services.beard.price"),
+      title: t("services.haircutBeard.title"),
+      description: t("services.haircutBeard.description"),
+      price: t("services.haircutBeard.price"),
+      image: serviceBeard,
+    },
+    {
+      icon: Heart,
+      title: t("services.senior.title"),
+      description: t("services.senior.description"),
+      price: t("services.senior.price"),
+      image: serviceShave,
+    },
+    {
+      icon: Smile,
+      title: t("services.kids.title"),
+      description: t("services.kids.description"),
+      price: t("services.kids.price"),
+      image: serviceHaircut,
+    },
+    {
+      icon: Droplets,
+      title: t("services.shampoo.title"),
+      description: t("services.shampoo.description"),
+      price: t("services.shampoo.price"),
       image: serviceBeard,
     },
     {
       icon: Wind,
-      title: t("services.shave.title"),
-      description: t("services.shave.description"),
-      price: t("services.shave.price"),
+      title: t("services.beard.title"),
+      description: t("services.beard.description"),
+      price: t("services.beard.price"),
       image: serviceShave,
     },
   ];
