@@ -4,6 +4,15 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const ContactSection = () => {
   const { t } = useLanguage();
 
+  const mapsKey = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY;
+  const placeId = import.meta.env.VITE_MAP_PLACE_ID?.trim();
+  const mapQuery =
+    import.meta.env.VITE_MAP_QUERY?.trim() ||
+    "MIRAGE | BARBERSHOP PALMA, Carrer de l'Arxiduc Lluís Salvador 23A, 07004 Palma";
+  const mapEmbedSrc = placeId
+    ? `https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=place_id:${placeId}&language=es&region=ES`
+    : `https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=${encodeURIComponent(mapQuery)}&language=es&region=ES`;
+
   return (
     <section id="contacto" className="py-24 bg-surface">
       <div className="container mx-auto px-4">
@@ -59,7 +68,7 @@ const ContactSection = () => {
         <div className="max-w-5xl mx-auto mt-12 rounded-lg overflow-hidden border border-border shadow-lg">
           <iframe
             title="MIRAGE | BARBERSHOP PALMA location on Google Maps"
-            src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY}&q=MIRAGE+%7C+BARBERSHOP+PALMA%2C+Carrer+de+l%27Arxiduc+Llu%C3%ADs+Salvador+23A%2C+07004+Palma&language=es&region=ES`}
+            src={mapEmbedSrc}
             width="100%"
             height="400"
             loading="lazy"
