@@ -28,7 +28,7 @@ const Navbar = () => {
         <a href="#inicio" className="flex items-center gap-2">
           <Scissors className="w-6 h-6 text-primary" />
           <div className="flex flex-col leading-tight">
-            <span className="font-display text-xl font-bold text-foreground">
+            <span className="font-display text-2xl font-bold text-foreground tracking-[0.25em]">
               <span className="text-gradient-gold">MIRAGE</span>
             </span>
             <span className="font-body text-[10px] tracking-[0.2em] uppercase text-primary">
