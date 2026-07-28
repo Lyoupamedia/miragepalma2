@@ -22,9 +22,12 @@ const HeroSection = () => {
         <p className="font-body text-primary tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in">
           {t("hero.subtitle")}
         </p>
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <span className="text-gradient-gold">MIRAGE</span>
         </h1>
+        <p className="font-body text-primary tracking-[0.25em] uppercase text-sm md:text-base mb-6 animate-fade-in" style={{ animationDelay: "0.25s" }}>
+          Barbershop Palma
+        </p>
         <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           {t("hero.description")}
         </p>

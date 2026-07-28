@@ -27,9 +27,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2">
           <Scissors className="w-6 h-6 text-primary" />
-          <span className="font-display text-xl font-bold text-foreground">
-            <span className="text-gradient-gold">MIRAGE</span>
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="font-display text-xl font-bold text-foreground">
+              <span className="text-gradient-gold">MIRAGE</span>
+            </span>
+            <span className="font-body text-[10px] tracking-[0.2em] uppercase text-primary">
+              Barbershop Palma
+            </span>
+          </div>
         </a>
 
         {/* Desktop */}
