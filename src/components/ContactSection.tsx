@@ -14,7 +14,7 @@ const ContactSection = () => {
     : `https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=${encodeURIComponent(mapQuery)}&language=es&region=ES`;
 
   return (
-    <section id="contacto" className="py-24 bg-surface">
+    <section id="contacto" className="py-24 bg-surface" aria-label={t("contact.title")}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">

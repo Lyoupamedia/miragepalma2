@@ -103,7 +103,7 @@ const Index = () => {
 
 
       <Navbar />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <ServicesSection />
         <AboutSection />
