@@ -19,7 +19,7 @@ const GallerySection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="galeria" className="py-24 bg-gradient-dark">
+    <section id="galeria" className="py-24 bg-gradient-dark" aria-label={t("gallery.title")}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">

@@ -12,7 +12,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="nosotros" className="py-24 bg-surface">
+    <section id="nosotros" className="py-24 bg-surface" aria-label={t("about.titleHighlight")}>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           <div className="relative">

@@ -53,7 +53,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicios" className="py-24 bg-gradient-dark">
+    <section id="servicios" className="py-24 bg-gradient-dark" aria-label={t("services.title")}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="font-body text-primary tracking-[0.2em] uppercase text-sm mb-3">

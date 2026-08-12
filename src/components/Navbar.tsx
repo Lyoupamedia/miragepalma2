@@ -24,6 +24,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-background focus:text-primary focus:p-4 focus:border focus:border-primary"
+      >
+        Skip to content
+      </a>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2">
           <Scissors className="w-6 h-6 text-primary" />
