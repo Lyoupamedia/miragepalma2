@@ -7,6 +7,7 @@ export const translations = {
     services: { es: "Servicios", en: "Services", fr: "Services" },
     about: { es: "Nosotros", en: "About", fr: "À propos" },
     gallery: { es: "Galería", en: "Gallery", fr: "Galerie" },
+    faq: { es: "FAQ", en: "FAQ", fr: "FAQ" },
     contact: { es: "Contacto", en: "Contact", fr: "Contact" },
     bookCta: { es: "Reservar Cita", en: "Book Now", fr: "Réserver" },
   },

@@ -8,6 +8,7 @@ const navLinks = [
   { href: "#servicios", key: "nav.services" },
   { href: "#nosotros", key: "nav.about" },
   { href: "#galeria", key: "nav.gallery" },
+  { href: "#faq", key: "nav.faq" },
   { href: "#contacto", key: "nav.contact" },
 ];
 

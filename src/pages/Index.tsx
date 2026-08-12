@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
+import FaqSection from "@/components/FaqSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -63,6 +64,45 @@ const websiteJsonLd = {
   inLanguage: ["es-ES", "en", "fr"],
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Necesito cita previa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aunque recomendamos reservar para asegurar tu hueco, también aceptamos clientes sin cita previa (walk-ins) según disponibilidad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es vuestro horario?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Estamos abiertos todos los días de la semana, de lunes a domingo, desde las 09:00 hasta las 21:30."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde estáis ubicados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos encontramos en Carrer de l'Arxiduc Lluís Salvador, 23A, Nord, 07004 Palma, Illes Balears."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Ofrecéis servicios para niños?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, ofrecemos cortes de pelo para niños con un estilo adaptado y mucha paciencia por 10€."
+      }
+    }
+  ]
+};
+
 const TITLE = "Mirage Barbershop Palma | Barbería Premium en Palma de Mallorca";
 const DESCRIPTION =
   "Mirage Barbershop en Palma de Mallorca: cortes de cabello, fade, arreglo de barba y afeitado clásico. Abierto todos los días 09:00-21:30. Reserva por WhatsApp.";
@@ -99,6 +139,7 @@ const Index = () => {
 
         <script type="application/ld+json">{JSON.stringify(businessJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
 
@@ -108,6 +149,7 @@ const Index = () => {
         <ServicesSection />
         <AboutSection />
         <GallerySection />
+        <FaqSection />
         <ContactSection />
       </main>
       <Footer />
