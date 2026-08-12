@@ -7,6 +7,7 @@ export const translations = {
     services: { es: "Servicios", en: "Services", fr: "Services" },
     about: { es: "Nosotros", en: "About", fr: "À propos" },
     gallery: { es: "Galería", en: "Gallery", fr: "Galerie" },
+    faq: { es: "FAQ", en: "FAQ", fr: "FAQ" },
     contact: { es: "Contacto", en: "Contact", fr: "Contact" },
     bookCta: { es: "Reservar Cita", en: "Book Now", fr: "Réserver" },
   },
@@ -129,8 +130,47 @@ export const translations = {
     whatsappCta: { es: "Agenda Tu Cita por WhatsApp", en: "Book Your Appointment via WhatsApp", fr: "Prenez Rendez-vous par WhatsApp" },
   },
 
+  // FAQ
+  faq: {
+    subtitle: { es: "Preguntas Frecuentes", en: "Frequently Asked Questions", fr: "Questions Fréquentes" },
+    title: { es: "FAQ", en: "FAQ", fr: "FAQ" },
+    q1: {
+      question: { es: "¿Necesito cita previa?", en: "Do I need an appointment?", fr: "Ai-je besoin d'un rendez-vous ?" },
+      answer: { 
+        es: "Aunque recomendamos reservar para asegurar tu hueco, también aceptamos clientes sin cita previa (walk-ins) según disponibilidad.", 
+        en: "While we recommend booking to secure your spot, we also welcome walk-ins based on availability.", 
+        fr: "Bien que nous recommandions de réserver pour garantir votre place, nous acceptons également les clients sans rendez-vous selon la disponibilité." 
+      }
+    },
+    q2: {
+      question: { es: "¿Cuál es vuestro horario?", en: "What are your opening hours?", fr: "Quels sont vos horaires ?" },
+      answer: { 
+        es: "Estamos abiertos todos los días de la semana, de lunes a domingo, desde las 09:00 hasta las 21:30.", 
+        en: "We are open every day of the week, from Monday to Sunday, from 09:00 AM to 09:30 PM.", 
+        fr: "Nous sommes ouverts tous les jours de la semaine, du lundi au dimanche, de 09h00 à 21h30." 
+      }
+    },
+    q3: {
+      question: { es: "¿Dónde estáis ubicados?", en: "Where are you located?", fr: "Où êtes-vous situés ?" },
+      answer: { 
+        es: "Nos encontramos en Carrer de l'Arxiduc Lluís Salvador, 23A, Nord, 07004 Palma, Illes Balears.", 
+        en: "We are located at Carrer de l'Arxiduc Lluís Salvador, 23A, Nord, 07004 Palma, Illes Balears.", 
+        fr: "Nous sommes situés au Carrer de l'Arxiduc Lluís Salvador, 23A, Nord, 07004 Palma, Illes Balears." 
+      }
+    },
+    q4: {
+      question: { es: "¿Ofrecéis servicios para niños?", en: "Do you offer services for children?", fr: "Proposez-vous des services pour enfants ?" },
+      answer: { 
+        es: "Sí, ofrecemos cortes de pelo para niños con un estilo adaptado y mucha paciencia por 10€.", 
+        en: "Yes, we offer kids' haircuts with a tailored style and plenty of patience for €10.", 
+        fr: "Oui, nous proposons des coupes de cheveux pour enfants avec un style adapté et beaucoup de patience pour 10€." 
+      }
+    }
+  },
+
   // Footer
   footer: {
     rights: { es: "Todos los derechos reservados.", en: "All rights reserved.", fr: "Tous droits réservés." },
+    quickLinks: { es: "Enlaces Rápidos", en: "Quick Links", fr: "Liens Rapides" },
   },
 } as const;

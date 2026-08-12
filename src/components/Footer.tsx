@@ -22,7 +22,7 @@ const Footer = () => {
           
           <div className="flex flex-col items-center md:items-start">
             <h4 className="font-display text-base font-semibold text-foreground mb-4 uppercase tracking-wider">
-              {t("nav.home")}
+              {t("footer.quickLinks")}
             </h4>
             <nav>
               <ul className="flex flex-col items-center md:items-start gap-2">
@@ -44,6 +44,11 @@ const Footer = () => {
                 <li>
                   <a href="#galeria" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                     {t("nav.gallery")}
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {t("nav.faq")}
                   </a>
                 </li>
                 <li>
