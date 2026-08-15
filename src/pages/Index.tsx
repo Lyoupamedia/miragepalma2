@@ -35,7 +35,7 @@ const businessJsonLd = {
     addressRegion: "Illes Balears",
     addressCountry: "ES",
   },
-  geo: { "@type": "GeoCoordinates", latitude: 39.5732, longitude: 2.6412 },
+  geo: { "@type": "GeoCoordinates", latitude: 39.5801, longitude: 2.6545 },
   areaServed: [
     { "@type": "City", name: "Palma de Mallorca" },
     { "@type": "AdministrativeArea", name: "Illes Balears" },
@@ -48,6 +48,42 @@ const businessJsonLd = {
       closes: "21:30",
     },
   ],
+  hasMenu: {
+    "@type": "Menu",
+    name: "Servicios de Barbería",
+    hasMenuItem: [
+      {
+        "@type": "MenuItem",
+        name: "Corte",
+        offers: { "@type": "Offer", price: "12.00", priceCurrency: "EUR" }
+      },
+      {
+        "@type": "MenuItem",
+        name: "Corte & Barba",
+        offers: { "@type": "Offer", price: "18.00", priceCurrency: "EUR" }
+      },
+      {
+        "@type": "MenuItem",
+        name: "Jubilado",
+        offers: { "@type": "Offer", price: "10.00", priceCurrency: "EUR" }
+      },
+      {
+        "@type": "MenuItem",
+        name: "Niños",
+        offers: { "@type": "Offer", price: "10.00", priceCurrency: "EUR" }
+      },
+      {
+        "@type": "MenuItem",
+        name: "Champú",
+        offers: { "@type": "Offer", price: "2.00", priceCurrency: "EUR" }
+      },
+      {
+        "@type": "MenuItem",
+        name: "Arreglo de Barba",
+        offers: { "@type": "Offer", price: "8.00", priceCurrency: "EUR" }
+      }
+    ]
+  },
   hasMap: "https://www.google.com/maps?q=MIRAGE+%7C+BARBERSHOP+PALMA",
   sameAs: [
     "https://www.instagram.com/miragepalma",
