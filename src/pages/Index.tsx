@@ -7,6 +7,7 @@ import GallerySection from "@/components/GallerySection";
 import FaqSection from "@/components/FaqSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const SITE_URL = "https://miragepalma2.lovable.app";
 const OG_IMAGE =
@@ -139,17 +140,19 @@ const faqJsonLd = {
   ]
 };
 
-const TITLE = "Mirage Barbershop Palma | Barbería Premium en Palma de Mallorca";
-const DESCRIPTION =
-  "Mirage Barbershop en Palma de Mallorca: cortes de cabello, fade, arreglo de barba y afeitado clásico. Abierto todos los días 09:00-21:30. Reserva por WhatsApp.";
-
 const Index = () => {
+  const { t, language } = useLanguage();
+
+  const title = t("seo.title");
+  const description = t("seo.description");
+  const locale = language === "es" ? "es_ES" : language === "fr" ? "fr_FR" : "en_US";
+
   return (
     <>
       <Helmet>
-        <html lang="es" />
-        <title>{TITLE}</title>
-        <meta name="description" content={DESCRIPTION} />
+        <html lang={language} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <meta
           name="keywords"
           content="barbería Palma, barber shop Palma de Mallorca, corte de pelo Palma, fade Palma, arreglo de barba, afeitado clásico, Mirage Barbershop"
@@ -159,9 +162,13 @@ const Index = () => {
 
         <meta property="og:type" content="business.business" />
         <meta property="og:site_name" content="Mirage Barbershop Palma" />
-        <meta property="og:locale" content="es_ES" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:locale" content={locale} />
+        {language !== "es" && <meta property="og:locale:alternate" content="es_ES" />}
+        {language !== "en" && <meta property="og:locale:alternate" content="en_US" />}
+        {language !== "fr" && <meta property="og:locale:alternate" content="fr_FR" />}
+        
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content={`${SITE_URL}/`} />
         <meta property="og:image" content={OG_IMAGE} />
         <meta property="og:image:width" content="1200" />
@@ -169,15 +176,14 @@ const Index = () => {
         <meta property="og:image:alt" content="Mirage Barbershop Palma" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={TITLE} />
-        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={OG_IMAGE} />
 
         <script type="application/ld+json">{JSON.stringify(businessJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
-
 
       <Navbar />
       <main id="main-content">
