@@ -1,6 +1,9 @@
 import serviceHaircut from "@/assets/service-haircut.jpg";
 import serviceBeard from "@/assets/service-beard.jpg";
 import serviceShave from "@/assets/service-shave.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import heroImg from "@/assets/hero-barbershop.jpg";
 import { Scissors, Sparkles, Heart, Smile, Droplets, Wind } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -13,42 +16,42 @@ const ServicesSection = () => {
       title: t("services.haircut.title"),
       description: t("services.haircut.description"),
       price: t("services.haircut.price"),
-      image: serviceHaircut,
+      image: gallery1, // Fade/Haircut focus
     },
     {
       icon: Sparkles,
       title: t("services.haircutBeard.title"),
       description: t("services.haircutBeard.description"),
       price: t("services.haircutBeard.price"),
-      image: serviceBeard,
+      image: serviceBeard, // Haircut & Beard pack
     },
     {
       icon: Heart,
       title: t("services.senior.title"),
       description: t("services.senior.description"),
       price: t("services.senior.price"),
-      image: serviceShave,
+      image: serviceShave, // Looks like a senior service
     },
     {
       icon: Smile,
       title: t("services.kids.title"),
       description: t("services.kids.description"),
       price: t("services.kids.price"),
-      image: serviceHaircut,
+      image: gallery3, // Modern cut suitable for kids too
     },
     {
       icon: Droplets,
       title: t("services.shampoo.title"),
       description: t("services.shampoo.description"),
       price: t("services.shampoo.price"),
-      image: serviceBeard,
+      image: heroImg, // Interior showing washing area/luxury
     },
     {
       icon: Wind,
       title: t("services.beard.title"),
       description: t("services.beard.description"),
       price: t("services.beard.price"),
-      image: serviceShave,
+      image: serviceHaircut, // Reassigned to Beard Trim
     },
   ];
 
