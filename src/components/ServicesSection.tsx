@@ -5,6 +5,7 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import heroImg from "@/assets/hero-barbershop.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
+import jubiladoImg from "@/assets/jubilado.jpg";
 import { Scissors, Sparkles, Heart, Smile, Droplets, Wind } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -31,7 +32,7 @@ const ServicesSection = () => {
       title: t("services.senior.title"),
       description: t("services.senior.description"),
       price: t("services.senior.price"),
-      image: aboutTeam, // Reassigned to aboutTeam which features an older distinguished barber/man
+      image: jubiladoImg, // Updated with professional image of distinguished man
     },
     {
       icon: Smile,
