@@ -1,6 +1,20 @@
 export type Language = "es" | "en" | "fr";
 
 export const translations = {
+  // SEO
+  seo: {
+    title: {
+      es: "Mirage Barbershop Palma | Barbería Premium en Palma de Mallorca",
+      en: "Mirage Barbershop Palma | Premium Barbershop in Palma de Mallorca",
+      fr: "Mirage Barbershop Palma | Barbier Premium à Palma de Majorque",
+    },
+    description: {
+      es: "Mirage Barbershop en Palma de Mallorca: cortes de cabello, fade, arreglo de barba y afeitado clásico. Abierto todos los días 09:00-21:30. Reserva por WhatsApp.",
+      en: "Mirage Barbershop in Palma de Mallorca: haircuts, fades, beard trims, and classic shaves. Open daily 09:00-21:30. Book via WhatsApp.",
+      fr: "Mirage Barbershop à Palma de Majorque : coupes, fade, taille de barbe et rasage classique. Ouvert tous les jours 09:00-21:30. Réservez par WhatsApp.",
+    },
+  },
+
   // Navbar
   nav: {
     home: { es: "Inicio", en: "Home", fr: "Accueil" },
