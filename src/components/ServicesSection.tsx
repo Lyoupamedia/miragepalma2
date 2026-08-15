@@ -80,7 +80,7 @@ const ServicesSection = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 contrast-110 grayscale-[0.2]"
                   loading="lazy"
                   width={800}
                   height={800}
